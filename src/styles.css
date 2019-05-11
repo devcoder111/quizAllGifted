@@ -1,0 +1,319 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+html{
+    height:100%;
+    min-height:100%;
+}
+body{
+    /* background: url([[setting:pagebackground]]) [[setting:background-repeat]]; */
+    position: relative;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    text-shadow: none !important;
+    color: #555;
+    padding-top: 35px;
+}
+
+#wrapper{
+    width:90%;
+  
+    margin:0 auto;
+    background:#ffffff;
+    border-top:4px solid ;
+}
+h1, h2, h3, h4, h5, h6,
+.back-to-top,
+.socials p,
+#socialheading,
+.forumpost .subject {
+    font-family: "[[setting:headingfont]]", sans-serif;
+    color:#555;
+}
+body,
+.block_login input[type="submit"], input, button, select, textarea {
+    font-family: "[[setting:bodyfont]]", Arial, Helvetica, sans-serif;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    border-radius: 2px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal !important;
+}
+h3 {
+    font-size: 24px;
+}
+h6 {
+    text-transform:uppercase;
+}
+a, a:visited, a.active, a:focus, #page-mod-scorm-player .breadcrumb-button a {
+    /* color: [[setting:linkcolor]]; */
+    text-decoration: none;
+}
+a:hover {
+    color: #222;
+    transition: all 0.3s ease 0.1s;
+    text-decoration: none;
+}
+.block ul.block_tree a, .breadcrumb a, .instancename {
+    color:#555;
+}
+.dir-rtl a.logo {
+    display: block;
+    float: right;
+}
+.sitetopic .section .activity:hover, .course-content .section .activity:hover {
+    background: none;
+}
+#page {
+    padding-top: 10px;
+}
+img.iconsmall {
+    height: inherit;
+    margin: 0;
+    vertical-align: inherit;
+    width: inherit;
+}
+.bor {
+    height: 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+    /* background: url([[pix:theme|bg/dot]]) repeat-x; */
+}
+.topbor {
+    height: 20px;
+    margin-bottom: 10px;
+    /* background: url([[pix:theme|bg/dot]]) repeat-x; */
+}
+.side-pre {
+    border: 1px solid #333;
+}
+.span12#move {
+    margin-top: -30px;
+}
+.mform fieldset.collapsible legend a.fheader {
+    margin-left:0;
+}
+.form-item .form-label, .mform .fitem div.fitemtitle, .userprofile dl.list dt, .form-horizontal .control-label {
+width:180px;
+}
+.form-item .form-setting, .form-item .form-description, .mform .fitem .felement, #page-mod-forum-search .c1, .mform .fdescription.required, .userprofile dl.list dd, .form-horizontal .controls {
+    margin-left: 200px;
+}
+fieldset.coursesearchbox {
+    display: none;
+}
+.moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd, .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd {
+    background: none repeat scroll 0 0 #F2F2F2;
+}
+#page-mod-forum-discuss .discussioncontrols {
+    margin: 5px;
+}
+/* Negate core style when using 'interesting' layout so that browser renders drop target
+   correctly. */
+.empty-region-side-pre #block-region-side-pre, .empty-region-side-post #block-region-side-post {
+    display: block;
+}
+.back-to-top [class^="icon-"] {
+    font-size: 3em;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 2em;
+    left: 92%;
+    display: none;
+    text-align:center; 
+    font:11px/100%; 
+    text-transform:uppercase; 
+    text-decoration:none; 
+    /* color:[[setting:maincolor]]; */
+}
+.back-to-top p{
+    display: none;
+}
+.back-to-top:hover{
+    /* color:[[setting:mainhovercolor]]; */
+    text-decoration: none;
+}
+
+/* =========================================================== *
+Header
+============================================================== */
+#page-header {
+    padding: 12px 0;
+}
+#page-header > .container-fluid > .row-fluid {
+    display:flex;
+}
+h2.main,
+#pageheading {
+    font-size: 1.4em;
+    line-height: 35px;
+    color: #777;
+    border-bottom: 1px solid #e1e1e1;
+}
+h1#title {
+    /* color: [[setting:maincolor]]; */
+    white-space: nowrap;
+    font-size: 2.1em;
+}
+h2#subtitle {
+    font-size: 1em;
+    margin-top: -24px;
+    letter-spacing: .15em;
+    white-space: nowrap;
+}
+#page-navbar {
+    margin-top: 0;
+    position:relative;
+    z-index:0;
+}
+.lambda-shadow {
+    display: block;
+    margin: 0 auto -30px;
+    max-width: 100%;
+    opacity: 0.45;
+}
+.breadcrumb-button input[type="submit"]{
+    /* background: [[setting:maincolor]]; */
+    color: #fff;
+    text-shadow: none;
+    border: 0px none;
+}
+.breadcrumb-button input[type="submit"]:hover {
+    /* background: [[setting:mainhovercolor]]; */
+}
+.breadcrumb-button a{
+    color: #fff;
+}
+.login-header {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+#block-login {
+    padding: 15px 0 2px;
+}
+#block-login label, #submit {
+    display: inline-block;
+    font-size: 1.2em;
+    height: 34px;
+    margin: 0;
+    text-align: center;
+}
+#block-login label#user, #block-login label#pass {
+    position: absolute;
+    color: #666666;
+    background: #eee;
+    width: 36px;
+}
+#block-login label#user .fa, #block-login label#pass .fa {
+    margin-top:8px;
+}
+#block-login input[type="text"], #block-login input[type="password"] {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e9e9e9;
+    border-radius: 0;
+    box-shadow: none;
+    color: #646464;
+    display: inline-block;
+    height: 34px;
+    margin: 0;
+    padding: 0 2px 0 40px;
+    width: 160px;
+}
+#submit{
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    /* background:url([[pix:theme|bg/login]]) no-repeat 50% 50% [[setting:def_buttoncolor]]; */
+    width: 38px;
+}
+#submit:hover, #submit:focus{
+    transition: all 0.3s ease 0.1s;
+    /* background:url([[pix:theme|bg/login]]) no-repeat 50% 50% [[setting:def_buttonhovercolor]]; */
+}
+#submit-caption {
+    color:#fff;
+}
+input{padding-left:40px;}
+#block-login:active > #block-login:before{
+    background-position:100px 100px;
+}
+.profileblock .forgotpass {
+    font-size: 0.9em;
+    text-align: right;
+}
+.pagelayout-frontpage .singinprovider {
+    float: right;
+}
+#loggedin-user {
+    float:right;
+}
+.jsenabled .usermenu .moodle-actionmenu .toggle-display.textmenu {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    z-index: 100;
+}
+.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu {
+    margin-left: 0;
+}
+.jsenabled .usermenu .moodle-actionmenu.show .menu {
+    padding: 4px;
+}
+.moodle-actionmenu.show[data-enhanced] .menu.align-tr-br {
+    top: 90%;
+}
+.moodle-actionmenu.show[data-enhanced] .menu {
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+.moodle-actionmenu.show[data-enhanced] .menu a {
+    color: #555;
+    padding: 0 0 0 28px;
+}
+.jsenabled .usermenu .moodle-actionmenu > .menu .filler {
+    margin: 2px;
+}
+.moodle-actionmenu.show[data-enhanced] .menu .iconsmall, .moodle-actionmenu.show[data-enhanced] .menu .smallicon {
+    height: 12px;
+    margin: 2px 0 2px -24px;
+    padding: 4px;
+    width: 12px;
+}
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover {
+   background-image:none;
+   background-color:#e5e5e5;
+   color:#555;
+}
+.usermenu .moodle-actionmenu .toggle-display .userbutton .avatars {
+    display: none !important;
+}
+.usermenu .moodle-actionmenu .toggle-display .userbutton .usertext {
+    max-width: 350px;
+}
+.jsenabled .usermenu .moodle-actionmenu.show {
+    background-color: initial;
+}
+.profileblock {
+    padding: 5px 0;
+}
+.profileblock .usermenu {
+    float: left;
+}
+.profileblock .welcome_userpicture {
+    float: right;
+    margin-left: 15px;
+    position: relative;
+}
+#loggedin-user .usertext {
+    
+    font-size: 1.35em;
+    font-weight: bold;
+    line-height: 1.15em;
+    word-wrap: break-word;
+}
