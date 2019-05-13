@@ -19,6 +19,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
+              "src/silent-refresh.html",
               "src/favicon.ico",
               "src/assets"
             ],
@@ -61,8 +62,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular:build",
-            "port" : 3000
+            "browserTarget": "Angular:build"
           },
           "configurations": {
             "production": {

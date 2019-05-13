@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from './../auth/auth.service';
 
 @Component({
   selector: 'app-main',
@@ -8,7 +7,7 @@ import { AuthService } from './../auth/auth.service';
 })
 export class MainComponent implements OnInit {
   newcomponet="Enter in new component crete"
-  constructor(public auth: AuthService) { }
+  constructor() { }
 
   ngOnInit() {
   }

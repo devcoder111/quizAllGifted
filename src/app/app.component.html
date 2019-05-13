@@ -1,27 +1,4 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<span us-spinner="{radius:30, width:8, length: 16}"></span>
-<div id="mathQuiz">
-    <div class="my-drawing visibilityhide" id="scratchpadshow"></div>				
-    <div class="header noselect"><h1>All Gifted<span ng-if="activeQuestion === -1">Mathematics</span></h1>
-      <div class="progress visibilityhide" id="progressshow">
-        
-    </div>
-    <div class="intro noselect {{ (activeQuestion > -1) ? 'inactive' :'active'}}">
-				<div ng-if="enrolled">
-					<h2>Welcome</h2>
- 					<p>Click to start Adaptive Kindergarten to Primary Six Math course</p>
- 					<div  (click)="auth.login()" class="startbtn">START <i class="fa fa-chevron-right"></i></div>
-				</div>
-				<!-- <div ng-if="!enrolled" class="visibilityhide" id="mastercodeunenroll">
-					<h3>Mastercode Registration Needed<br> <input type="number" class="mastercode" ng-model="mastercode.mastercode" placeholder="Mastercode"></h3>
-					<p><input type="text" ng-model = "mastercode.firstname" placeholder="First Name" class="mastercode" required>
-					<input type="text" ng-model = "mastercode.lastname" placeholder="Last Name" class="mastercode" required>
-
-					<input type="datetime" ng-model = "mastercode.date_of_birth" placeholder="Birthdate in mm/dd/yyyy" class="mastercode" required></p>
-					<p ng-click="sendMastercode()" class="startbtn">SUBMIT <i class="fa fa-chevron-right"></i></p>
-				</div> -->
-		 </div>
-</div>
 
 
 <router-outlet></router-outlet>
